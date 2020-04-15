@@ -23,7 +23,7 @@
 </head>
 
 <body data-topbar="colored">
-
+<?= (session()->has('message'))? session()->message : '' ?>
     <!-- Begin page -->
     <div id="layout-wrapper">
 
@@ -120,7 +120,28 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
-
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-google-pages"></i>
+                                <span>Data Produk</span>
+                            </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="<?= base_url('dashboard/tambah_produk') ?>">Tambah Produk</a></li>
+                                    <li><a href="<?= base_url('dashboard/data_produk') ?>">List Produk</a></li>
+                                </ul>
+                            </li>
+                        <li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-google-pages"></i>
+                                <span>Data Kategori</span>
+                            </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="<?= base_url('dashboard/tambah_kategori') ?>">Tambah Kategori</a></li>
+                                    <li><a href="<?= base_url('dashboard/data_kategori') ?>">List Kategori</a></li>
+                                </ul>
+                            </li>
+                        <li>
                         <li class="menu-title">Tools</li>
 
                         <li>

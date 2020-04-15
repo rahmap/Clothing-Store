@@ -35,6 +35,7 @@ $routes->group('/', function($routes)
 	$routes->get('home', 'Home::index', ['as' => 'home']);
 	$routes->get('about', 'Home::about', ['as' => 'about']);
 	$routes->get('contact', 'Home::contact', ['as' => 'contact']);
+	$routes->get('detail', 'Home::detail', ['as' => 'detail_produk']);
 
 	$routes->group('auth', function($routes)
 	{

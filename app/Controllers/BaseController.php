@@ -13,8 +13,8 @@ namespace App\Controllers;
  *
  * @package CodeIgniter
  */
-
 use CodeIgniter\Controller;
+use App\Libraries\FreeLib;
 
 class BaseController extends Controller
 {
@@ -27,6 +27,8 @@ class BaseController extends Controller
 	 * @var array
 	 */
 	protected $helpers = [];
+	protected $image;
+	protected $free;
 
 	/**
 	 * Constructor.
@@ -41,7 +43,9 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.:
 		// $this->session = \Config\Services::session();
+		$this->image = \Config\Services::image();
 		helper(['form', 'url', 'session']);
+		$this->free = new FreeLib();
 	}
 
 }
