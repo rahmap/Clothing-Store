@@ -44,7 +44,7 @@ class BaseController extends Controller
 		// E.g.:
 		// $this->session = \Config\Services::session();
 		$this->image = \Config\Services::image();
-		helper(['form', 'url', 'session']);
+		helper(['form', 'url', 'session', 'filesystem']);
 		$this->free = new FreeLib();
 	}
 

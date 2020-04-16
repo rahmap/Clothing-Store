@@ -1,7 +1,13 @@
 <?php namespace Config;
 
 // Create a new instance of our RouteCollection class.
+
 $routes = Services::routes(true);
+$db = \Config\Database::connect();
+// foreach( $result as $row )
+// {
+//     $route[ $row->slug ] = 'pages/slug_on_the_fly/$1;
+// }
 
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
@@ -9,7 +15,6 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
 {
 	require SYSTEMPATH . 'Config/Routes.php';
 }
-
 /**
  * --------------------------------------------------------------------
  * Router Setup

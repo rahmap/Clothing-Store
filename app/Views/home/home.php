@@ -51,67 +51,16 @@
                                       <!-- single product start-->
                                       <div class="single-product">
                                           <div class="product-img">
-                                              <div class="single-prodcut-img  product-overlay pos-rltv">
+                                              <div class="single-prodcut-img pos-rltv">
                                                   <a href="<?= route_to('detail_produk') ?>"> <img alt=""
-                                                          src="<?= base_url('clothing') ?>/images/product/04.jpg" class="primary-image"> <img
-                                                          alt="" src="<?= base_url('clothing') ?>/images/product/03.jpg"
+                                                          src="<?= base_url('test.png') ?>" class="primary-image"> <img
+                                                          alt="" src="<?= base_url('test1.png') ?>"
                                                           class="secondary-image">
                                                   </a>
                                               </div>
                                           </div>
                                           <div class="product-text">
-                                              <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Quisque
-                                                      fringilla</a> </div>
-                                              <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-price">
-                                                      <div class="new-price"> $220 </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- single product end-->
-                                  </div>
-                                  <div class="col-lg-4 col-md-6 item">
-                                      <!-- single product start-->
-                                      <div class="single-product">
-                                          <div class="product-img">
-                                              <div class="product-label red">
-                                                  <div class="new">New</div>
-                                              </div>
-                                              <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                  <a href="<?= route_to('detail_produk') ?>"> <img alt=""
-                                                          src="<?= base_url('clothing') ?>/images/product/01.jpg" class="primary-image"> <img
-                                                          alt="" src="<?= base_url('clothing') ?>/images/product/02.jpg"
-                                                          class="secondary-image">
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div class="product-text">
-                                              <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Quisque
-                                                      fringilla</a> </div>
-                                              <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-price">
-                                                      <div class="new-price"> $220 </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- single product end-->
-                                  </div>
-                                  <div class="col-lg-4 col-md-6 item">
-                                      <!-- single product start-->
-                                      <div class="single-product">
-                                          <div class="product-img">
-                                              <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                  <a href="<?= route_to('detail_produk') ?>"> <img alt=""
-                                                          src="<?= base_url('clothing') ?>/images/product/03.jpg" class="primary-image"> <img
-                                                          alt="" src="<?= base_url('clothing') ?>/images/product/04.jpg"
-                                                          class="secondary-image">
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div class="product-text">
-                                              <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Quisque
+                                              <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">QuiAAAsque
                                                       fringilla</a> </div>
                                               <div class="prodcut-ratting-price">
                                                   <div class="prodcut-price">
@@ -150,13 +99,6 @@
                                                       Force Bralette</a>
                                               </div>
                                               <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-ratting list-ratting">
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                  </div>
                                                   <div class="prodcut-price list-price">
                                                       <div class="new-price"> $220 </div>
                                                       <div class="old-price"> <del>$250</del> </div>
@@ -213,203 +155,8 @@
                                                       Force Bralette</a>
                                               </div>
                                               <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-ratting list-ratting">
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                  </div>
                                                   <div class="prodcut-price list-price">
                                                       <div class="new-price"> $220 </div>
-                                                  </div>
-                                              </div>
-                                              <div class="list-product-content">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                      elit.
-                                                      Fusce
-                                                      dolor tellus, bibendum eu lacus ids suscipit
-                                                      blandit tortor. Aenean eget posuere augue, vel
-                                                      molestie
-                                                      turpis.
-                                                      Ut tempor mauris ut justo luctus aliquam. Nullam
-                                                      id quam vitae odio scelerisque ultrices.</p>
-                                              </div>
-                                              <div class="social-icon-wraper mt-25">
-                                                  <div class="social-icon socile-icon-style-1">
-                                                      <ul>
-                                                          <li><a href="#"><i
-                                                                      class="zmdi zmdi-shopping-cart"></i></a>
-                                                          </li>
-                                                          <li><a href="#"><i
-                                                                      class="zmdi zmdi-favorite-outline"></i></a>
-                                                          </li>
-                                                          <li><a href="#" data-tooltip="Quick View" class="q-view"
-                                                                  data-toggle="modal" data-target=".modal"
-                                                                  tabindex="0"><i class="zmdi zmdi-eye"></i></a>
-                                                          </li>
-                                                          <li><a href="#"><i class="zmdi zmdi-repeat"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- single product end-->
-                                  </div>
-                                  <div class="col-lg-12 item">
-                                      <!-- single product start-->
-                                      <div class="single-product single-product-list">
-                                          <div class="product-img">
-                                              <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                  <a href="<?= route_to('detail_produk') ?>"> <img alt=""
-                                                          src="<?= base_url('clothing') ?>/images/product/05.jpg" class="primary-image"> <img
-                                                          alt="" src="<?= base_url('clothing') ?>/images/product/06.jpg"
-                                                          class="secondary-image">
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div class="product-text prodcut-text-list fix">
-                                              <div class="prodcut-name list-name montserrat"> <a
-                                                      href="<?= route_to('detail_produk') ?>">Magnetic
-                                                      Force Bralette</a>
-                                              </div>
-                                              <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-ratting list-ratting">
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                  </div>
-                                                  <div class="prodcut-price list-price">
-                                                      <div class="new-price"> $200 </div>
-                                                      <div class="old-price"> <del>$300</del> </div>
-                                                  </div>
-                                              </div>
-                                              <div class="list-product-content">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                      elit.
-                                                      Fusce
-                                                      dolor tellus, bibendum eu lacus ids suscipit
-                                                      blandit tortor. Aenean eget posuere augue, vel
-                                                      molestie
-                                                      turpis.
-                                                      Ut tempor mauris ut justo luctus aliquam. Nullam
-                                                      id quam vitae odio scelerisque ultrices.</p>
-                                              </div>
-                                              <div class="social-icon-wraper mt-25">
-                                                  <div class="social-icon socile-icon-style-1">
-                                                      <ul>
-                                                          <li><a href="#"><i
-                                                                      class="zmdi zmdi-shopping-cart"></i></a>
-                                                          </li>
-                                                          <li><a href="#"><i
-                                                                      class="zmdi zmdi-favorite-outline"></i></a>
-                                                          </li>
-                                                          <li><a href="#" data-tooltip="Quick View" class="q-view"
-                                                                  data-toggle="modal" data-target=".modal"
-                                                                  tabindex="0"><i class="zmdi zmdi-eye"></i></a>
-                                                          </li>
-                                                          <li><a href="#"><i class="zmdi zmdi-repeat"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- single product end-->
-                                  </div>
-                                  <div class="col-lg-12 item">
-                                      <!-- single product start-->
-                                      <div class="single-product single-product-list">
-                                          <div class="product-img">
-                                              <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                  <a href="<?= route_to('detail_produk') ?>"> <img alt=""
-                                                          src="<?= base_url('clothing') ?>/images/product/04.jpg" class="primary-image"> <img
-                                                          alt="" src="<?= base_url('clothing') ?>/images/product/05.jpg"
-                                                          class="secondary-image">
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div class="product-text prodcut-text-list fix">
-                                              <div class="prodcut-name list-name montserrat"> <a
-                                                      href="<?= route_to('detail_produk') ?>">Magnetic
-                                                      Force Bralette</a>
-                                              </div>
-                                              <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-ratting list-ratting">
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                  </div>
-                                                  <div class="prodcut-price list-price">
-                                                      <div class="new-price"> $220 </div>
-                                                  </div>
-                                              </div>
-                                              <div class="list-product-content">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                      elit.
-                                                      Fusce
-                                                      dolor tellus, bibendum eu lacus ids suscipit
-                                                      blandit tortor. Aenean eget posuere augue, vel
-                                                      molestie
-                                                      turpis.
-                                                      Ut tempor mauris ut justo luctus aliquam. Nullam
-                                                      id quam vitae odio scelerisque ultrices.</p>
-                                              </div>
-                                              <div class="social-icon-wraper mt-25">
-                                                  <div class="social-icon socile-icon-style-1">
-                                                      <ul>
-                                                          <li><a href="#"><i
-                                                                      class="zmdi zmdi-shopping-cart"></i></a>
-                                                          </li>
-                                                          <li><a href="#"><i
-                                                                      class="zmdi zmdi-favorite-outline"></i></a>
-                                                          </li>
-                                                          <li><a href="#" data-tooltip="Quick View" class="q-view"
-                                                                  data-toggle="modal" data-target=".modal"
-                                                                  tabindex="0"><i class="zmdi zmdi-eye"></i></a>
-                                                          </li>
-                                                          <li><a href="#"><i class="zmdi zmdi-repeat"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- single product end-->
-                                  </div>
-                                  <div class="col-lg-12 item">
-                                      <!-- single product start-->
-                                      <div class="single-product single-product-list">
-                                          <div class="product-img">
-                                              <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                  <a href="<?= route_to('detail_produk') ?>"> <img alt=""
-                                                          src="<?= base_url('clothing') ?>/images/product/06.jpg" class="primary-image"> <img
-                                                          alt="" src="<?= base_url('clothing') ?>/images/product/07.jpg"
-                                                          class="secondary-image">
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div class="product-text prodcut-text-list fix">
-                                              <div class="prodcut-name list-name montserrat"> <a
-                                                      href="<?= route_to('detail_produk') ?>">Magnetic
-                                                      Force Bralette</a>
-                                              </div>
-                                              <div class="prodcut-ratting-price">
-                                                  <div class="prodcut-ratting list-ratting">
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                      <a href="#"><i class="fa fa-star-o"></i></a>
-                                                  </div>
-                                                  <div class="prodcut-price list-price">
-                                                      <div class="new-price"> $200 </div>
-                                                      <div class="old-price"> <del>$300</del> </div>
                                                   </div>
                                               </div>
                                               <div class="list-product-content">
@@ -509,21 +256,17 @@
                           <!-- single product start-->
                           <div class="single-product recent-single-product">
                               <div class="product-img">
-                                  <div class="single-prodcut-img  product-overlay pos-rltv">
-                                      <a href="<?= route_to('detail_produk') ?>"> <img alt="" src="<?= base_url('clothing') ?>/images/product/rp01.jpg"
+                                  <div class="single-prodcut-img pos-rltv">
+                                      <a href="<?= route_to('detail_produk') ?>"> <img alt="" src="<?= base_url('test.png') ?>"
                                               class="primary-image">
-                                          <img alt="" src="<?= base_url('clothing') ?>/images/product/rp02.jpg" class="secondary-image"> </a>
+                                          <img alt="" src="<?= base_url('test1.png') ?>" class="secondary-image"> </a>
                                   </div>
                               </div>
                               <div class="product-text">
                                   <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Copenhagen
                                           Spitfire Chair</a> </div>
                                   <div class="prodcut-ratting-price">
-                                      <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a
-                                              href="#"><i class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star-o"></i></a> </div>
+                                      
                                       <div class="prodcut-price">
                                           <div class="new-price"> $220 </div>
                                       </div>
@@ -545,11 +288,7 @@
                                   <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Copenhagen
                                           Spitfire Chair</a> </div>
                                   <div class="prodcut-ratting-price">
-                                      <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a
-                                              href="#"><i class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star-o"></i></a> </div>
+                                      
                                       <div class="prodcut-price">
                                           <div class="new-price"> $220 </div>
                                       </div>
@@ -571,11 +310,7 @@
                                   <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Copenhagen
                                           Spitfire Chair</a> </div>
                                   <div class="prodcut-ratting-price">
-                                      <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a
-                                              href="#"><i class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star-o"></i></a> </div>
+                                      
                                       <div class="prodcut-price">
                                           <div class="new-price"> $220 </div>
                                       </div>
@@ -597,11 +332,7 @@
                                   <div class="prodcut-name"> <a href="<?= route_to('detail_produk') ?>">Copenhagen
                                           Spitfire Chair</a> </div>
                                   <div class="prodcut-ratting-price">
-                                      <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a
-                                              href="#"><i class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star"></i></a> <a href="#"><i
-                                                  class="fa fa-star-o"></i></a> </div>
+                                      
                                       <div class="prodcut-price">
                                           <div class="new-price"> $220 </div>
                                       </div>

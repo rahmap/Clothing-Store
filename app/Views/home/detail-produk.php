@@ -33,7 +33,7 @@
                                 <div class="thumbnail-carousel">
                                     <ul class="nav">
                                        <li>
-                                        <a class="active" href="#view11" class="shadow-box" aria-controls="view11" data-toggle="tab"><img src="<?= base_url('clothing') ?>/images/product/01.jpg" alt="" /></a></li>
+                                        <a class="active" href="#view11" class="shadow-box" aria-controls="view11" data-toggle="tab"><img src="<?= base_url('test.png') ?>" alt="" /></a></li>
                                        <li>
                                         <a href="#view22" class="shadow-box" aria-controls="view22" data-toggle="tab"><img src="<?= base_url('clothing') ?>/images/product/02.jpg" alt="" /></a></li>
                                        <li>
@@ -50,7 +50,7 @@
                            </div>
                             <div role="tabpanel" class="tab-pane active" id="view11">
                                 <div class="product-img">
-                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('clothing') ?>/images/product/01.jpg"><img src="<?= base_url('clothing') ?>/images/product/01.jpg" alt="Single portfolio" /></a>
+                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('test.png') ?>"><img src="<?= base_url('test.png') ?>" alt="Single portfolio" /></a>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="view22">

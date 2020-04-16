@@ -47,5 +47,8 @@ class Validation
 		'diskonProduk'     => 'required|min_length[1]',
 		'kategori'     => 'required'
 	];
+	public $addKategori = [
+		'kategori'     => 'required|min_length[3]|max_length[50]'
+	];
 
 }

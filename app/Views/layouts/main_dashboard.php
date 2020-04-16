@@ -17,7 +17,7 @@
     <link href="<?= base_url('apaxy/css/icons.min.css') ?>" rel="stylesheet" type="text/css" />
 
     <?= $this->renderSection('outCSS') ?>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- App Css-->
     <link href="<?= base_url('apaxy/css/app.min.css') ?>" rel="stylesheet" type="text/css" />
 </head>

@@ -85,45 +85,47 @@
               <div class="form-group row">
                   <label for="example-search-input" class="col-md-2 col-form-label">Foto Depan</label>
                   <div class="col-md-10">
-                      <input class="form-control <?= (\Config\Services::validation()->getError('keterangan'))? 'is-invalid' : '' ; ?>" name="fotoDepan" type="file" required>
+                      <input class="form-control <?= (\Config\Services::validation()->getError('fotoDepan'))? 'is-invalid' : '' ; ?>" name="fotoDepan" type="file" required>
                       <div class="invalid-feedback">
-                          <?= \Config\Services::validation()->getError('keterangan'); ?>
+                          <?= \Config\Services::validation()->getError('fotoDepan'); ?>
                       </div>
                   </div>
               </div>
               <div class="form-group row">
                   <label for="example-search-input" class="col-md-2 col-form-label">Foto Belakang</label>
                   <div class="col-md-10">
-                      <input class="form-control <?= (\Config\Services::validation()->getError('keterangan'))? 'is-invalid' : '' ; ?>" name="fotoBelakang" type="file" required>
+                      <input class="form-control <?= (\Config\Services::validation()->getError('fotoBelakang'))? 'is-invalid' : '' ; ?>" name="fotoBelakang" type="file" required>
                       <div class="invalid-feedback">
-                          <?= \Config\Services::validation()->getError('keterangan'); ?>
+                          <?= \Config\Services::validation()->getError('fotoBelakang'); ?>
                       </div>
                   </div>
               </div>
               <div class="form-group row">
                   <label for="example-search-input" class="col-md-2 col-form-label">Related Foto Depan</label>
                   <div class="col-md-10">
-                      <input class="form-control <?= (\Config\Services::validation()->getError('keterangan'))? 'is-invalid' : '' ; ?>" name="fotoRelatedDepan" type="file" required>
+                      <input class="form-control <?= (\Config\Services::validation()->getError('fotoRelatedDepan'))? 'is-invalid' : '' ; ?>" name="fotoRelatedDepan" type="file" required>
                       <div class="invalid-feedback">
-                          <?= \Config\Services::validation()->getError('keterangan'); ?>
+                          <?= \Config\Services::validation()->getError('fotoRelatedDepan'); ?>
                       </div>
                   </div>
               </div>
               <div class="form-group row">
                   <label for="example-search-input" class="col-md-2 col-form-label">Related Foto Belakang</label>
                   <div class="col-md-10">
-                      <input class="form-control <?= (\Config\Services::validation()->getError('keterangan'))? 'is-invalid' : '' ; ?>" name="fotoRelatedBelakang" type="file" required>
+                      <input class="form-control <?= (\Config\Services::validation()->getError('fotoRelatedBelakang'))? 'is-invalid' : '' ; ?>" name="fotoRelatedBelakang" type="file" required>
                       <div class="invalid-feedback">
-                          <?= \Config\Services::validation()->getError('keterangan'); ?>
+                          <?= \Config\Services::validation()->getError('fotoRelatedBelakang'); ?>
                       </div>
                   </div>
               </div>
               <div class="form-group row">
                   <label for="example-search-input" class="col-md-2 col-form-label">Kategori</label>
                   <div class="col-md-10">
-                    <select class="form-control" name="kategori">
+                    <select class="form-control" name="kategori" required>
                       <option value=""> - Pilih -</option>
-                      <option value="TEST">TEST</option>
+                      <?php foreach($kategori as $kat): ?>
+                        <option value="<?= $kat['kategori_id'] ?>"> <?= $kat['kategori_nama'] ?></option>
+                      <?php endforeach; ?>
                     </select>
                   </div>
               </div>
