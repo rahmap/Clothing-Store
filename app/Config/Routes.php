@@ -4,10 +4,12 @@
 
 $routes = Services::routes(true);
 $db = \Config\Database::connect();
-// foreach( $result as $row )
-// {
-//     $route[ $row->slug ] = 'pages/slug_on_the_fly/$1;
-// }
+$produk = $db->table('produk');
+$slug = $produk->select(['slug'])->get()->getResultArray();
+
+$kategori = $db->table('kategori');
+$slug1 = $kategori->select(['slug'])->get()->getResultArray();
+
 
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
@@ -35,6 +37,16 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+foreach( $slug1 as $row )
+{
+		$routes->get('/'.$row['slug'], 'Home::kategori');
+}
+
+foreach( $slug as $row )
+{
+		$routes->get('/'.$row['slug'], 'Home::detail');
+}
+
 $routes->group('/', function($routes) 
 {
 	$routes->get('home', 'Home::index', ['as' => 'home']);

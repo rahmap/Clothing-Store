@@ -40,10 +40,10 @@ class Dashboard extends BaseController
 					$foto_gd2 = $this->request->getFile($val);
 
 					if($val == 'fotoDepan'){
-						$lebar = 860; $tinggi = 1163;
+						$lebar = 403; $tinggi = 545;
 						$nama['fotoDepan'] = 'FD_'.$foto_gd2->getRandomName();
 					} else if ($val == 'fotoBelakang') {
-						$lebar = 860; $tinggi = 1163;
+						$lebar = 403; $tinggi = 545;
 						$nama['fotoBelakang'] = 'FB_'.$foto_gd2->getRandomName();
 					} else if ($val == 'fotoRelatedDepan') {
 						$lebar = 348; $tinggi = 400;
@@ -77,7 +77,9 @@ class Dashboard extends BaseController
 					'foto_depan' => $nama['fotoDepan'],
 					'foto_belakang' => $nama['fotoBelakang'],
 					'fr_depan' => $nama['fotoRelatedDepan'],
-					'fr_belakang' => $nama['fotoRelatedBelakang']
+					'fr_belakang' => $nama['fotoRelatedBelakang'],
+					'delete_at' => 0,
+					'create_at' => time()
 				];
 
 				if($this->DM->addProduk($request)){
@@ -107,7 +109,8 @@ class Dashboard extends BaseController
 			} else {
 				
 				$request = [
-					'kategori_nama' => ucwords($this->request->getPost('kategori'))
+					'kategori_nama' => ucwords($this->request->getPost('kategori')),
+					'slug' => strtolower(str_replace(' ','-', $this->request->getPost('kategori')))
 				];
 
 				if($this->DM->addKategori($request)){

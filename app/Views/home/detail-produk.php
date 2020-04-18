@@ -33,13 +33,9 @@
                                 <div class="thumbnail-carousel">
                                     <ul class="nav">
                                        <li>
-                                        <a class="active" href="#view11" class="shadow-box" aria-controls="view11" data-toggle="tab"><img src="<?= base_url('test.png') ?>" alt="" /></a></li>
+                                        <a class="active" href="#view11" class="shadow-box" aria-controls="view11" data-toggle="tab"><img src="<?= base_url('produk/'.$produk['foto_depan']) ?>" alt="" /></a></li>
                                        <li>
-                                        <a href="#view22" class="shadow-box" aria-controls="view22" data-toggle="tab"><img src="<?= base_url('clothing') ?>/images/product/02.jpg" alt="" /></a></li>
-                                       <li>
-                                        <a href="#view33" class="shadow-box" aria-controls="view33" data-toggle="tab"><img src="<?= base_url('clothing') ?>/images/product/03.jpg" alt="" /></a></li>
-                                       <li>
-                                        <a href="#view44" class="shadow-box" aria-controls="view44" data-toggle="tab"><img src="<?= base_url('clothing') ?>/images/product/04.jpg" alt="" /></a></li>
+                                        <a href="#view22" class="shadow-box" aria-controls="view22" data-toggle="tab"><img src="<?= base_url('produk/'.$produk['foto_belakang']) ?>" alt="" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,22 +46,12 @@
                            </div>
                             <div role="tabpanel" class="tab-pane active" id="view11">
                                 <div class="product-img">
-                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('test.png') ?>"><img src="<?= base_url('test.png') ?>" alt="Single portfolio" /></a>
+                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('produk/'.$produk['foto_depan']) ?>"><img src="<?= base_url('produk/'.$produk['foto_depan']) ?>" alt="Single portfolio" /></a>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="view22">
                                 <div class="product-img">
-                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('clothing') ?>/images/product/02.jpg"><img src="<?= base_url('clothing') ?>/images/product/02.jpg" alt="Single portfolio" /></a>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="view33">
-                                <div class="product-img">
-                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('clothing') ?>/images/product/03.jpg"><img src="<?= base_url('clothing') ?>/images/product/03.jpg" alt="Single portfolio" /></a>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="view44">
-                                <div class="product-img">
-                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('clothing') ?>/images/product/04.jpg"><img src="<?= base_url('clothing') ?>/images/product/04.jpg" alt="Single portfolio" /></a>
+                                    <a class="fancybox" data-fancybox-group="group" href="<?= base_url('produk/'.$produk['foto_belakang']) ?>"><img src="<?= base_url('produk/'.$produk['foto_belakang']) ?>" alt="Single portfolio" /></a>
                                 </div>
                             </div>
                         </div>
@@ -74,17 +60,17 @@
                     <div class="col-lg-5">
                         <div class="single-product-description">
                            <div class="sp-top-des">
-                                <h3>GLOB t-SHIRT <span>(Brand)</span></h3>
+                                <h3><?= $produk['judul_produk'] ?> <span>(<?= $produk['brand_produk'] ?>)</span></h3>
                                 <div class="prodcut-ratting-price">
                                     <div class="prodcut-price">
-                                        <div class="new-price"> $220 </div>
-                                        <div class="old-price"> <del>$250</del> </div>
+                                        <div class="new-price"> Rp <?= number_format($produk['harga_produk'], 0, ',', '.')  ?></div>
+                                        <!-- <div class="old-price"> <del>$250</del> </div> -->
                                     </div>
                                 </div>
                             </div>
                             
                             <div class="sp-des">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                                <p><?= $produk['keterangan_tumb'] ?></p>
                             </div>
                             <div class="sp-bottom-des">
                             <div class="social-icon socile-icon-style-1 text-center">
@@ -120,17 +106,7 @@
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane fix fade in" id="newarrival">
                                         <div class="review-wraper">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                <br> veniam, quis nostrud exercitation.</p>
-                                            <h5>ABOUT ME</h5>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                                            <h5>SIZE & FIT</h5>
-                                            <ul>
-                                                <li>Model wears: Style Photoliya U2980</li>
-                                                <li>Model's height: 185”66</li>
-                                            </ul>
-                                            <h5>Overview</h5>
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                            <p><?= $produk['keterangan'] ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,134 +133,31 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="total-new-arrival new-arrival-slider-active carsoule-btn row">
+                        <?php foreach($randomProduk as $key): ?>
                             <div class="col-lg-3">
                                 <!-- single product start-->
                                 <div class="single-product">
                                     <div class="product-img">
-                                        <div class="product-label">
-                                            <div class="new">New</div>
-                                        </div>
-                                        <div class="single-prodcut-img  product-overlay pos-rltv">
-                                            <a href="single-product.html"> <img alt="" src="<?= base_url('clothing') ?>/images/product/01.jpg"
-                                                    class="primary-image"> <img alt="" src="<?= base_url('clothing') ?>/images/product/02.jpg"
+                                        <div class="single-prodcut-img pos-rltv">
+                                            <a href="<?= $key['slug'] ?>"> <img alt="" src="<?= base_url('produk/'.$key['foto_depan']) ?>"
+                                                    class="primary-image"> <img alt="" src="<?= base_url('produk/'.$key['foto_belakang']) ?>"
                                                     class="secondary-image"> </a>
                                         </div>
 
                                     </div>
                                     <div class="product-text">
-                                        <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a>
+                                        <div class="prodcut-name"> <a href="<?= $key['slug'] ?>"><?= $key['judul_produk'] ?></a>
                                         </div>
                                         <div class="prodcut-ratting-price">
                                             <div class="prodcut-price">
-                                                <div class="new-price"> $220 </div>
+                                                <div class="new-price"> Rp <?= number_format($key['harga_produk'], 0, ',', '.')  ?> </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- single product end-->
                             </div>
-                            <div class="col-lg-3">
-                                <!-- single product start-->
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <div class="single-prodcut-img  product-overlay pos-rltv">
-                                            <a href="single-product.html"> <img alt="" src="<?= base_url('clothing') ?>/images/product/03.jpg"
-                                                    class="primary-image"> <img alt="" src="<?= base_url('clothing') ?>/images/product/04.jpg"
-                                                    class="secondary-image"> </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a>
-                                        </div>
-                                        <div class="prodcut-ratting-price">
-                                            <div class="prodcut-price">
-                                                <div class="new-price"> $220 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single product end-->
-                            </div>
-                            <div class="col-lg-3">
-                                <!-- single product start-->
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <div class="product-label">
-                                            <div class="new">Sale</div>
-                                        </div>
-                                        <div class="single-prodcut-img  product-overlay pos-rltv">
-                                            <a href="single-product.html"> <img alt="" src="<?= base_url('clothing') ?>/images/product/02.jpg"
-                                                    class="primary-image"> <img alt="" src="<?= base_url('clothing') ?>/images/product/03.jpg"
-                                                    class="secondary-image"> </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a>
-                                        </div>
-                                        <div class="prodcut-ratting-price">
-                                            <div class="prodcut-price">
-                                                <div class="new-price"> $220 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single product end-->
-                            </div>
-                            <div class="col-lg-3">
-                                <!-- single product start-->
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <div class="single-prodcut-img  product-overlay pos-rltv">
-                                            <a href="single-product.html"> <img alt="" src="<?= base_url('clothing') ?>/images/product/04.jpg"
-                                                    class="primary-image"> <img alt="" src="<?= base_url('clothing') ?>/images/product/03.jpg"
-                                                    class="secondary-image"> </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a>
-                                        </div>
-                                        <div class="prodcut-ratting-price">
-                                            <div class="prodcut-price">
-                                                <div class="new-price"> $220 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single product end-->
-                            </div>
-                            <div class="col-lg-3">
-                                <!-- single product start-->
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <div class="single-prodcut-img  product-overlay pos-rltv">
-                                            <a href="single-product.html"> <img alt="" src="<?= base_url('clothing') ?>/images/product/05.jpg"
-                                                    class="primary-image"> <img alt="" src="<?= base_url('clothing') ?>/images/product/06.jpg"
-                                                    class="secondary-image"> </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a>
-                                        </div>
-                                        <div class="prodcut-ratting-price">
-                                            <div class="prodcut-ratting">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                            <div class="prodcut-price">
-                                                <div class="new-price"> $220 </div>
-                                                <div class="old-price"> <del>$250</del> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single product end-->
-                            </div>
+                        <?php endforeach; ?>
                         </div>
                     </div>
                 </div>

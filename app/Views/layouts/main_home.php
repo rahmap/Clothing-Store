@@ -8,7 +8,7 @@
     <meta name="description" content="Jual produk berkualitas">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="images/icons/favicon.ico">
+    <link rel="icon" href="<?= base_url('clothing') ?>/images/icons/favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- All css files are included here. -->
