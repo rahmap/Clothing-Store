@@ -7,9 +7,6 @@ $db = \Config\Database::connect();
 $produk = $db->table('produk');
 $slug = $produk->select(['slug'])->get()->getResultArray();
 
-$kategori = $db->table('kategori');
-$slug1 = $kategori->select(['slug'])->get()->getResultArray();
-
 
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
@@ -37,10 +34,6 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-foreach( $slug1 as $row )
-{
-		$routes->get('/'.$row['slug'], 'Home::kategori');
-}
 
 foreach( $slug as $row )
 {
@@ -53,6 +46,7 @@ $routes->group('/', function($routes)
 	$routes->get('about', 'Home::about', ['as' => 'about']);
 	$routes->get('contact', 'Home::contact', ['as' => 'contact']);
 	$routes->get('detail', 'Home::detail', ['as' => 'detail_produk']);
+	$routes->get('kategori/(:any)', 'Home::kategori/$1');
 
 	$routes->group('auth', function($routes)
 	{

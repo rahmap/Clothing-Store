@@ -8,18 +8,6 @@
 
 <?= $this->endSection() ?>
 
-<?= $this->section('breadcrumb') ?>
-<div class="breadcumb-area breadcumb-2 overlay pos-rltv">
-  <div class="bread-main">
-    <div class="bred-hading text-center">
-    </div>
-    <ol class="breadcrumb">
-        <li class="home"><a title="Go to Home Page" href="index.html">Home</a></li>
-        <li class="active"><?= $title ?></li>
-    </ol>
-  </div>
-</div>
-<?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
 <div class="shop-main-area grid-view_area ptb-70">
@@ -79,18 +67,19 @@
 
 
                           <!--pagination start-->
-                          <div class="col-lg-12">
+                          <!-- <div class="col-lg-12">
                               <div class="pagination-btn text-center">
                                   <ul class="page-numbers">
-                                    <?php if ($pager) :?>
-                                    <?php $pagi_path= 'home'; ?>
-                                    <?php $pager->setPath($pagi_path); ?>
-                                    <?= $pager->links() ?>
-                                    <?php endif ?>
-
+                                      <li><a href="#" class="next page-numbers"><i
+                                                  class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                      <li><span class="page-numbers current">1</span></li>
+                                      <li><a href="#" class="page-numbers">2</a></li>
+                                      <li><a href="#" class="page-numbers">3</a></li>
+                                      <li><a href="#" class="next page-numbers"><i
+                                                  class="zmdi zmdi-long-arrow-right"></i></a></li>
                                   </ul>
                               </div>
-                          </div>
+                          </div> -->
                           <!--pagination end-->
                       </div>
                   </div>

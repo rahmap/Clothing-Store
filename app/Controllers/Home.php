@@ -38,14 +38,16 @@ class Home extends BaseController
 		return view('home/detail-produk', $data);
 	}
 
-	public function kategori()
+	public function kategori($kategori)
 	{
 		$data = [
+			'kategori' => $this->HM->getAllKategori(),
+			'recentProduk' => $this->HM->getRecentProduk(),
 			'title' => ucwords(str_replace('-',' ', $this->request->uri->getSegment(1))),
-			'produk' => $this->HM->getDetailProduk($this->request->uri->getSegment(1))
+			'produk' => $this->HM->getProdukByKategori($kategori)
 		];
-		dd($data);
-		return view('home/detail-produk', $data);
+		// dd($data);
+		return view('home/HomeByKategori', $data);
 	}
 
 }

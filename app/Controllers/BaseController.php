@@ -28,6 +28,7 @@ class BaseController extends Controller
 	 */
 	protected $helpers = [];
 	protected $image;
+	protected $pager;
 	protected $free;
 
 	/**
@@ -44,7 +45,8 @@ class BaseController extends Controller
 		// E.g.:
 		// $this->session = \Config\Services::session();
 		$this->image = \Config\Services::image();
-		helper(['form', 'url', 'session', 'filesystem']);
+		$this->pager = \Config\Services::pager();
+		helper(['form', 'url', 'session', 'filesystem', 'pager']);
 		$this->free = new FreeLib();
 	}
 

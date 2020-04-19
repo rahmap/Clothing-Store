@@ -52,4 +52,10 @@ class Home_Model extends Model
     ->getResultArray();
   }
 
+  public function getProdukByKategori($kategori)
+  {
+    return $this->produk->join('kategori', 'kategori.kategori_id=produk.fk_kategori')
+                        ->where('kategori.slug', $kategori)->get()->getResultArray();
+  }
+
 }
