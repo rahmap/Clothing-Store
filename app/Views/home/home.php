@@ -33,7 +33,7 @@
                       <div class="row">
                           <div class="col-xl-3 d-lg-none d-xl-block d-none">
                               <div class="total-showing text-right">
-                                  Showing - <span>10</span> to <span>18</span> Of Total <span>36</span>
+                                  <!-- Showing - <span>10</span> to <span>18</span> Of Total <span>36</span> -->
                               </div>
                           </div>
                       </div>
@@ -79,54 +79,60 @@
 
 
                           <!--pagination start-->
-                          <div class="col-lg-12">
+                            <div class="col-lg-12">
                               <div class="pagination-btn text-center">
-                                  <ul class="page-numbers">
                                     <?php if ($pager) :?>
-                                    <?php $pagi_path= 'home'; ?>
-                                    <?php $pager->setPath($pagi_path); ?>
                                     <?= $pager->links() ?>
                                     <?php endif ?>
-
-                                  </ul>
+                                </div>
                               </div>
-                          </div>
                           <!--pagination end-->
+                            <!-- <div class="col-lg-12">
+                                <div class="pagination-btn text-center">
+                                    <ul class="page-numbers">
+                                        <li><a href="#" class="next page-numbers"><i class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                        <li><span class="page-numbers current">1</span></li>
+                                        <li><a href="#" class="page-numbers">2</a></li>
+                                        <li><a href="#" class="page-numbers">3</a></li>
+                                        <li><a href="#" class="next page-numbers"><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
                       </div>
                   </div>
               </div>
           </div>
       </div>
-      <!--main-shop-product start-->
+        <!--main-shop-product start-->
 
-      <!--shop sidebar start-->
-      <div class="col-lg-3 col-md-4 order-lg-1 order-md-1 order-2">
-          <div class="shop-sidebar">
-              <!--single aside start-->
-              <aside class="single-aside search-aside search-box">
-                  <form action="#">
-                      <div class="input-box">
-                          <input class="single-input" placeholder="Search...." type="text">
-                          <button class="src-btn sb-2"><i class="fa fa-search"></i></button>
-                      </div>
-                  </form>
-              </aside>
-              <!--single aside end-->
+        <!--shop sidebar start-->
+        <div class="col-lg-3 col-md-4 order-lg-1 order-md-1 order-2">
+            <div class="shop-sidebar">
+                <!--single aside start-->
+                <aside class="single-aside search-aside search-box">
+                    <form action="#">
+                        <div class="input-box">
+                            <input class="single-input" placeholder="Search...." type="text">
+                            <button class="src-btn sb-2"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </aside>
+                <!--single aside end-->
 
-              <!--single aside start-->
-              <aside class="single-aside catagories-aside">
-                  <div class="heading-title aside-title pos-rltv">
-                      <h5 class="uppercase">categories</h5>
-                  </div>
-                  <div id="cat-treeview" class="product-cat">
-                      <ul>
-                        <?php foreach($kategori as $kat): ?>
-                          <li class="closed"><a href="<?= base_url('kategori/'.$kat['slug']) ?>"><?= $kat['kategori_nama'] ?></a></li>
-                        <?php endforeach; ?>
-                      </ul>
-                  </div>
-              </aside>
-              <!--single aside end-->
+                <!--single aside start-->
+                <aside class="single-aside catagories-aside">
+                    <div class="heading-title aside-title pos-rltv">
+                        <h5 class="uppercase">categories</h5>
+                    </div>
+                    <div id="cat-treeview" class="product-cat">
+                        <ul>
+                            <?php foreach($kategori as $kat): ?>
+                            <li class="closed"><a href="<?= base_url('kategori/'.$kat['slug']) ?>"><?= $kat['kategori_nama'] ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </aside>
+                <!--single aside end-->
 
               <!--single aside start-->
               <aside class="single-aside product-aside">
@@ -174,5 +180,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('outJS') ?>
-
+<script>
+    $('.pagination').removeClass('pagination').addClass('page-numbers');
+</script>
 <?= $this->endsection() ?>

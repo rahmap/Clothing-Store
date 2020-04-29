@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 use App\Models\Home_Model;
+use App\Models\Produks;
 
 class Home extends BaseController
 {
@@ -18,13 +19,15 @@ class Home extends BaseController
 
 	public function index()
 	{
+		$produk = new Produks();
 		$data = [
 			'title' => 'Welcome',
-			'produk' => $this->HM->getAllProduk(),
+			'produk' => $produk->where('delete_at', 0)->paginate(6),
 			'recentProduk' => $this->HM->getRecentProduk(),
-			'kategori' => $this->HM->getAllKategori()
+			'kategori' => $this->HM->getAllKategori(),
+			'pager' => $produk->pager
 		];
-		// dd($data);
+		// dd($pager);
 		return view('home/home', $data);
 	}
 
@@ -40,11 +43,14 @@ class Home extends BaseController
 
 	public function kategori($kategori)
 	{
+		$produk = new Produks();
 		$data = [
 			'kategori' => $this->HM->getAllKategori(),
 			'recentProduk' => $this->HM->getRecentProduk(),
 			'title' => ucwords(str_replace('-',' ', $this->request->uri->getSegment(1))),
-			'produk' => $this->HM->getProdukByKategori($kategori)
+			'produk' => $produk->join('kategori', 'kategori.kategori_id=produk.fk_kategori')
+									->where(['kategori.slug' => $kategori, 'delete_at', 0])->paginate(6),
+			'pager' => $produk->pager
 		];
 		// dd($data);
 		return view('home/HomeByKategori', $data);

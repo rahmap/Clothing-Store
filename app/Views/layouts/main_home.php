@@ -51,11 +51,7 @@
                             <div class="social-search-area text-center">
                                 <div class="social-icon socile-icon-style-2">
                                     <ul>
-                                        <li><a href="#" title="facebook"><i class="fa fa-facebook"></i></a> </li>
-                                        <li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a> </li>
-                                        <li> <a href="#" title="dribble"><i class="fa fa-dribbble"></i></a></li>
-                                        <li> <a href="#" title="behance"><i class="fa fa-behance"></i></a> </li>
-                                        <li> <a href="#" title="rss"><i class="fa fa-rss"></i></a> </li>
+                                        <li><a target="_blank" href="http://instagram.com/motoliciousx.co" title="facebook"><i class="fa fa-instagram"></i></a> </li>
                                     </ul>
                                 </div>
                             </div>

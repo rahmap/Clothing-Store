@@ -21,7 +21,7 @@
                       <div class="row">
                           <div class="col-xl-3 d-lg-none d-xl-block d-none">
                               <div class="total-showing text-right">
-                                  Showing - <span>10</span> to <span>18</span> Of Total <span>36</span>
+                                  <!-- Showing - <span>10</span> to <span>18</span> Of Total <span>36</span> -->
                               </div>
                           </div>
                       </div>
@@ -65,7 +65,13 @@
                           </div>
                           <!--shop grid are end-->
 
-
+                          <div class="col-lg-12">
+                              <div class="pagination-btn text-center">
+                                    <?php if ($pager) :?>
+                                    <?= $pager->links() ?>
+                                    <?php endif ?>
+                                </div>
+                              </div>
                           <!--pagination start-->
                           <!-- <div class="col-lg-12">
                               <div class="pagination-btn text-center">
@@ -163,5 +169,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('outJS') ?>
-
+<script>
+    $('.pagination').removeClass('pagination').addClass('page-numbers');
+</script>
 <?= $this->endsection() ?>

@@ -2,12 +2,16 @@
 
 use CodeIgniter\Model;
 
-class Produks extends Model
+class Kategoris extends Model
 {
 
-  protected $table = 'produk';
+  protected $table = 'kategori';
   protected $returnType = 'array';
   // protected $allowedFields = ['member_nama', 'member_email', 'member_password', 'create_at', 'delete_at'];
-  protected $primaryKey = 'produk_id';
+  protected $primaryKey = 'kategori_id';
 
+  function article()
+  {
+    return $this->belongsTo('Produks');
+  }
 }

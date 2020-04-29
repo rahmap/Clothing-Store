@@ -41,9 +41,9 @@
                             </div>
                         </div>
                         <div class="tab-content active-portfolio-area pos-rltv">
-                           <div class="social-tag">
+                           <!-- <div class="social-tag">
                               <a href="#"><i class="zmdi zmdi-share"></i></a>
-                           </div>
+                           </div> -->
                             <div role="tabpanel" class="tab-pane active" id="view11">
                                 <div class="product-img">
                                     <a class="fancybox" data-fancybox-group="group" href="<?= base_url('produk/'.$produk['foto_depan']) ?>"><img src="<?= base_url('produk/'.$produk['foto_depan']) ?>" alt="Single portfolio" /></a>
@@ -75,7 +75,7 @@
                             <div class="sp-bottom-des">
                             <div class="social-icon socile-icon-style-1 text-center">
                                 <ul>
-                                    <li style="width:100%;"><a href="#" data-tooltip="Pesan Sekarang" class="add-cart add-cart-text" data-placement="middle" tabindex="0">Pesan Sekarang</a></li>
+                                    <li style="width:100%;"><a target="_blank" href="https://wa.me/6282220040831?text=Saya tertarik untuk membeli <?= $produk['judul_produk'] ?>" data-tooltip="Pesan Sekarang" class="add-cart add-cart-text" data-placement="middle" tabindex="0">Pesan Sekarang</a></li>
                                 </ul>
                             </div>
                       </div>
@@ -87,7 +87,7 @@
         <!--single-protfolio-area are start-->
         
         <!--descripton-area start -->
-        <div class="descripton-area">
+        <!-- <div class="descripton-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -102,7 +102,7 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12">
                                 <div class="content-tab-product-category">
-                                <!-- Tab panes -->
+
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane fix fade in" id="newarrival">
                                         <div class="review-wraper">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>     -->
         <!--descripton-area end--> 
         
         <!--new arrival area start-->
